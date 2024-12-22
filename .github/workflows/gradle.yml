@@ -22,7 +22,7 @@ jobs:
       - name: build
         continue-on-error: true
         id: build_1
-        run: ./gradlew packageExe
+        run: ./gradlew packageReleaseExe
       # 上传构建文件
       - name: capture build artifacts
         uses: actions/upload-artifact@v4
